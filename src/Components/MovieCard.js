@@ -14,13 +14,11 @@ function MovieCard({movie}) {
   <Card.Img variant="top" src={movie.image} />
   <Card.Body>
     <Card.Title>{movie.title}</Card.Title>
-    <Card.Text>
-    {movie.description}
-    </Card.Text>
+   
   </Card.Body>
   <ListGroup className="list-group-flush">
     <ListGroupItem>{movie.rate}</ListGroupItem>
-    <Link to={"/details/:id"}><Button >More details</Button> </Link>
+    <Link to={`/details/${movie.id}`}><Button >More details</Button> </Link>
   </ListGroup>
  
 </Card>

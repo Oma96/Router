@@ -7,7 +7,7 @@ function MovieList({ movies,rate }) {
     const [input, setInput] = useState('')
     return (
         <div>
-             <Filter input={input} setInput={setInput} />
+             <Filter style={{marginTop:50}} input={input} setInput={setInput} />
             <div className='movies'>
 
                 {movies
