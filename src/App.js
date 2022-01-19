@@ -45,12 +45,12 @@ function App() {
       <h1>Movies Land</h1>
      
       <Routes>
-      <Route path="/" element={<MovieList/>}/>
-  // <Fragment>
+      <Route path="/" element={<MovieList movies={movies} rate={rate}/>}/>
+  {/* // <Fragment>
   //   <MovieList  movies={movies} rate={rate}/>
   //   <Rate rate={rate} setRate={setRate}/>
   //   <AddMovie movies={movies} setMovies={setMovies}/>
-  // </Fragment>
+  // </Fragment> */}
     
       <Route path ="/details/:id" element={movies.map((el,key) => <MovieDetails className='card' movie={el} key={el.id} />)}/>
      </Routes>
